@@ -29,6 +29,7 @@ def content_check():
     print(movies_df.head())
     print(movies_df['rating'].unique())
     print(movies_df['genre'].unique())
+    print(movies_df['runtime'].max())
     #print(movies_df.isnull().sum())
     #print(movies_df['company'].value_counts())
 
