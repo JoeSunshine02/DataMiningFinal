@@ -14,9 +14,9 @@ def clean_for_regression():
     movies_df=movies_df.drop(columns=['name','released','director','writer','star','country','company'])
     movies_df=movies_df.drop(columns=['rating', 'genre'])
 
-    #corr = movies_df.corr()
-    #sns.heatmap(corr, annot=True)
-    #plt.show()
+    corr = movies_df.corr()
+    sns.heatmap(corr, annot=True)
+    plt.show()
     return movies_df
 
 def regress_budget_v_gross(movie_df): ##regression of gross vs budget
